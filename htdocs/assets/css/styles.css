@@ -1,0 +1,141 @@
+/**
+ *  @file       styles.css
+ *  @brief      The default .css file of Sokoban.
+ *  @author     Yiwei Chiao (ywchiao@gmail.com)
+ *  @date       11/17/2017 created.
+ *  @date       11/24/2017 last modified.
+ *  @since      0.1.0
+ *  @copyright  MIT, (C) 2017 Yiwei Chiao
+ *  @details
+ *
+ *  The default .css file of Sokoban.
+ */
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #ffffe7;
+  height: 100vh;
+}
+
+header {
+  background-color: #c7c7f7;
+}
+
+nav {
+  background-color: #c7f7f7;
+}
+
+aside {
+  background-color: #f7c7c7;
+}
+
+article {
+  background-color: #c7c7c7;
+}
+
+section {
+  background-color: #c7f7c7;
+}
+
+footer {
+  background-color: #e7e7e7;
+}
+
+@keyframes slide_in {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes move_eye {
+  from {
+    margin-left: -20%;
+  }
+
+  to {
+    margin-left: 100%;
+  }
+}
+
+.welcome {
+  background-color: black;
+  height: 3.5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.welcome_message {
+  width: 100%;
+  text-align: center;
+  margin-right: 2%;
+  padding: .25rem;
+  color: white;
+  float: left;
+}
+
+.cylon_eye {
+  background-color: red;
+  background-image: linear-gradient(to right,
+      rgba(0, 0, 0, .9) 25%,
+      rgba(0, 0, 0, .1) 50%,
+      rgba(0, 0, 0, .9) 75%
+  );
+
+  color: white;
+  height: 100%;
+  width: 20%;
+
+  animation: 5s linear alternate infinite move_eye;
+}
+
+.slide_in {
+  animation: 3s ease alternate 1 slide_in;
+  overflow: hidden;
+}
+
+/*
+ * 頁面的根 container
+ */
+.site_container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/*
+ * 佔據所有能佔的 (垂直) 空間的 site_body
+ */
+.site_body {
+  flex: 1 0 auto;
+  padding: 1rem;
+}
+
+.site_banner {
+  padding: 1rem;
+}
+
+/*
+ * 設置固定在底部的 site footer。
+ */
+.site_footer {
+  display: flex;
+  flex-shrink: 0;
+  padding: 1rem;
+  color: SteelBlue;
+  background: MidnightBlue;
+}
+
+.float_right {
+  margin-left: auto;
+}
+
+/* styles.css */
