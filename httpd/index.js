@@ -1,11 +1,11 @@
 /**
  *  @file       index.js
  *  @brief      The entry function of the httpd.
- *  @author     Yiwei Chiao (ywchiao@gmail.com)
+ *  @author     zz870422zz (zz870422zz@gmail.com)
  *  @date       10/03/2017 created.
  *  @date       11/17/2017 last modified.
  *  @version    0.1.0
- *  @copyright  MIT, (C) 2017 Yiwei Chiao
+ *  @copyright  MIT, (C) 2017 zz870422zz
  *  @details
  *
  *  The entry function of the httpd.
